@@ -26,7 +26,13 @@ public class LoginPage extends TestBase
 		loginBtn.click();
 		return driver.getCurrentUrl();
 	}
-	
+	public String loginToApplicationMultiCreds(String un,String pass)
+	{
+		userNameTxtBox.sendKeys(un);
+		passwordNameTxtBox.sendKeys(pass);
+		loginBtn.click();
+		return driver.getCurrentUrl();
+	}
 	
 	
 	public String verifyTitleOfApplication()
